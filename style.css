@@ -432,6 +432,43 @@ section .title::after{
 .contact .contact-content .left p{
     text-align: justify;
 }
+
+
+
+/* linkedin logo */
+.contact .contact-content p {
+    margin: 10px 0;
+    font-size: 50px;
+    color: crimson;
+    border-style: none;
+    display: flex; /* Align items horizontally */
+    align-items: center;
+}
+.contact .contact-content p a {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent */
+}
+.contact .contact-content p a i {
+    border: 2px solid crimson; /* Add a border to the icon */
+    border-radius: 10%; /* Make the border rounded */
+    padding: 5px; /* Adjust padding to ensure border visibility */
+    color: white; /* Icon text color */
+    background-color: crimson; /* Icon background color */
+    display: inline-block; /* Ensure the element is inline */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+.contact .contact-content p a i:hover {
+    color: crimson; /* Change icon text color on hover */
+    background-color: white; /* Change background color on hover */
+    border-color: crimson; /* Border color remains crimson */
+}
+
+
+
+
+
+
+
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
@@ -514,6 +551,7 @@ footer{
     background: #111;
     padding: 20px 23px;
     color: #fff;
+    text-align: center;
 }
 footer span a {
     color: crimson;
