@@ -442,28 +442,40 @@ section .title::after{
 .contact .contact-content p {
     margin: 10px 0;
     font-size: 50px;
-    color: crimson;
-    border-style: none;
     display: flex; /* Align items horizontally */
     align-items: center;
 }
 .contact .contact-content p a {
     text-decoration: none; /* Remove underline from link */
     color: inherit; /* Inherit color from parent */
+    margin: 0 10px; /* Space between icons */
 }
 .contact .contact-content p a i {
-    border: 2px solid crimson; /* Add a border to the icon */
-    border-radius: 10%; /* Make the border rounded */
-    padding: 5px; /* Adjust padding to ensure border visibility */
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    padding: 10px; /* Adjust padding */
+    border-radius: 25%; /* Make the border rounded */
     color: white; /* Icon text color */
-    background-color: crimson; /* Icon background color */
-    display: inline-block; /* Ensure the element is inline */
+    display: flex; /* Ensure the element is a flex container */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
     transition: all 0.3s ease; /* Add transition effect */
 }
+.contact .contact-content p a.linkedin i {
+    background-color: #0077B5; /* LinkedIn color */
+}
+.contact .contact-content p a.instagram i {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Instagram gradient */
+}
+.contact .contact-content p a.twitter i {
+    background-color: #1DA1F2; /* Twitter color */
+}
+.contact .contact-content p a.facebook i {
+    background-color: #1877F2; /* Facebook color */
+}
 .contact .contact-content p a i:hover {
-    color: crimson; /* Change icon text color on hover */
-    background-color: white; /* Change background color on hover */
-    border-color: crimson; /* Border color remains crimson */
+    color: white; /* Keep icon text color on hover */
+    opacity: 0.8; /* Change background color on hover */
 }
 
 
@@ -493,6 +505,12 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
+
+.contact .right{
+    display: flex;
+    gap: 30px;
+}
+
 .contact .right form .fields{
     display: flex;
 }
